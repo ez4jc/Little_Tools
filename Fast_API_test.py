@@ -11,7 +11,7 @@ def call_with_prompt(word_input):
     }
 
     data = {
-        "model": "qwen_turbo",  # 替换为实际模型名称
+        "model": "qwen_turbo",
         "messages": [
             {
                 "role": "user",
