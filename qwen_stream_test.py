@@ -1,7 +1,7 @@
 from http import HTTPStatus
 import dashscope
 
-dashscope.api_key = ""
+dashscope.api_key = "sk-693317d6d8374702a086ea955b885c76"
 
 
 def call_with_stream(word_input):

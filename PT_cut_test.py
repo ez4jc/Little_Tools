@@ -12,6 +12,7 @@ def pt_read(text):
 
 
 if __name__ == '__main__':
-    paragraphs = pt_read('D:/Documents/1.txt')
+    paragraphs = pt_read('D:/Documents/老年人能力评估.txt')
     for paragraph in paragraphs:
         print(paragraph)
+    print(len(paragraphs))

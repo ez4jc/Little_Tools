@@ -13,8 +13,8 @@ def decorator(func):
 
 @decorator
 def test():
-	"""this is test __doc__"""
-	print("this is test method")
+	"""this is tools_test __doc__"""
+	print("this is tools_test method")
 
 
 print("__name__: ", test.__name__)
