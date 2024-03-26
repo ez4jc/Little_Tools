@@ -1,5 +1,5 @@
 import requests
-url_api = "http://"
+url_api = "http://111.19.168.149:8197/v1/chat/completions"
 
 
 def call_with_prompt(word_input):
