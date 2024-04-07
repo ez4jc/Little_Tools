@@ -1,6 +1,6 @@
 from http import HTTPStatus
 import requests
-url = "http://"
+url = "http://111.19.168.149:8197/v1/chat/completions"
 
 content_init = input()
 
