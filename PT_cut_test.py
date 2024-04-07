@@ -14,6 +14,7 @@ def batch_file(path, file_list):
             batch_file(fs, file_list)
     return file_list
 
+
 def func_timer(function):
     @wraps(function)
     def function_timer(*args, **kwargs):
@@ -43,6 +44,7 @@ def pt_read(text):
                   if count_chinese_chars(paragraph) >= 35]
 
     return paragraphs
+
 
 def pt_cut():
     file_list = []
@@ -80,3 +82,12 @@ if __name__ == '__main__':
     # i = re.sub(r'\n\s*\n*(\(\d+\))', r'\n\1', i)
     # print(i)
     # pt_cut()
+    text = """
+    1. This is a sentence.\n\n\n2. This is another sentence.\n\n\n3. This is yet another sentence.\n\n\n
+    """
+
+    # 将1个或更多的换行符替换为一个换行符
+    pattern = re.compile("\.\n{2,}(\d+\.)")
+    new_text = re.sub(pattern, '.\n\g<1>', text)
+
+    print(new_text)
